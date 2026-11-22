@@ -1,0 +1,16 @@
+# XenonX Core — scaffold v0.1
+
+Android/Kotlin-oriented emulator core scaffolding for the XenonX project.
+
+## Included
+- CoreEngine lifecycle and subsystem initialization/cleanup
+- CoreState lifecycle states
+- GameLoader file metadata inspection (does not parse or execute game images)
+- Input button event dispatch
+- CPU, memory, graphics, and audio interfaces
+
+## Not implemented
+This is not a working Xbox emulator. It contains no Xbox CPU instruction interpreter, chipset/memory map, GPU emulation, audio hardware emulation, firmware, or game execution.
+
+## Integration
+Copy `src/main/kotlin/com/xenonx/core` into the Android app's Kotlin source tree. Adjust the package path if the existing app uses a different namespace.
